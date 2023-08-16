@@ -68,18 +68,16 @@ body {
 }
 
 .card .dice-button {
-    max-width: 60px;
-    height: 60px;
-    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    width: 60px;
+    aspect-ratio: 1;
     background-color: var(--dice-and-title);
-    border: none;
-    position: absolute;
-    bottom: -30px;
-    border-radius: 50%;
     display: grid;
     place-items: center;
-    cursor: pointer;
-    box-decoration-break: none;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30px;
 }
 
 .card .dice-button:hover {
@@ -92,11 +90,6 @@ body {
 }
 
 @media (max-width: 425px) {
-
-    .card .title-advice {
-        font-weight: 300;
-    }
-
     .card .img .img-desktop {
         display: none;
     }
