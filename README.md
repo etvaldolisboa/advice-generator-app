@@ -43,7 +43,7 @@ In addition to the font it gets smaller. 📏
 ## API ✨ consumption
 [Click here to view the API website](https://api.adviceslip.com/) 👀
 
-In JavaScript a function with asyn/await and the fecth metod was added to work with this API
+In JavaScript a function with async/await and fecth metod was added to work with this API
 
 ```JS
 async function advice() {
