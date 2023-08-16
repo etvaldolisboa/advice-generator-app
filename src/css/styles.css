@@ -23,6 +23,12 @@ body {
     background-color: var(--gray-900);
 }
 
+@media (max-width:900px) {
+    body {
+        padding:20px;
+    }
+}
+
 .card {
     background-color: var(--gray-700);
     display: flex;
@@ -50,12 +56,13 @@ body {
     text-align: center;
     color: var(--light);
     font-weight: 500;
-    font-size: clamp(2.3rem, 2.8rem, 3.3rem);
+    font-size: clamp(2rem, 2.8rem, 3.3rem);
 }
 
 .card .img {
     user-select: none;
 }
+
 .card .img .img-mobile {
     display: none;
 }
@@ -72,21 +79,19 @@ body {
     display: grid;
     place-items: center;
     cursor: pointer;
+    box-decoration-break: none;
 }
 
 .card .dice-button:hover {
     box-shadow: 0 0 30px var(--dice-and-title);
 }
 
-.dice {
+.card .dice {
     max-width: 25px;
     min-height: 25px;
 }
 
 @media (max-width: 425px) {
-    body {
-        padding: 30px;
-    }
 
     .card .title-advice {
         font-weight: 300;
