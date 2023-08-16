@@ -1,0 +1,102 @@
+:root {
+    --light: hsl(193, 38%, 86%);
+    --dice-and-title: hsl(150, 100%, 66%);
+    --gray-200: hsl(217, 19%, 38%);
+    --gray-700: hsl(217, 19%, 24%);
+    --gray-900: hsl(218, 23%, 16%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;800&display=swap');
+
+html {
+    font-size: 62.5%;
+    font-weight: 300;
+    font-family: system-ui;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-900);
+}
+
+.card {
+    background-color: var(--gray-700);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+    width: 495px;
+    aspect-ratio: 2/1;
+    border-radius: 1.5rem;
+    padding: 49px 45px 63px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 1px 1px 3px var(--gray-200);
+}
+
+.card .title-advice {
+    color: var(--dice-and-title);
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.card .text-advice {
+    text-align: center;
+    color: var(--light);
+    font-weight: 500;
+    font-size: clamp(2.3rem, 2.8rem, 3.3rem);
+}
+
+.card .img {
+    user-select: none;
+}
+.card .img .img-mobile {
+    display: none;
+}
+
+.card .dice-button {
+    max-width: 60px;
+    height: 60px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--dice-and-title);
+    border: none;
+    position: absolute;
+    bottom: -30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.card .dice-button:hover {
+    box-shadow: 0 0 30px var(--dice-and-title);
+}
+
+.dice {
+    max-width: 25px;
+    min-height: 25px;
+}
+
+@media (max-width: 425px) {
+    body {
+        padding: 30px;
+    }
+
+    .card .title-advice {
+        font-weight: 300;
+    }
+
+    .card .img .img-desktop {
+        display: none;
+    }
+
+    .card .img .img-mobile {
+        display: block;
+    }
+}
