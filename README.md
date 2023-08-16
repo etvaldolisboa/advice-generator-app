@@ -5,7 +5,7 @@
 In this Frontend Mentor challenge it was proposed to create an application that consumes an advice API, using HTML, CSS and JS and an API. The board id is changed along with its content when the user clicks the data button. The goal was to follow the design provided in Figma and ensure that the app was responsive on mobile devices. 📱
 
 ## App 📱 Layout
-<img src='./src/design/desktop-preview.png'>
+<img src='./src/design/demostration-app.gif'>
 
 ## Challenge Link in Frontend Mentor 🎨
 
